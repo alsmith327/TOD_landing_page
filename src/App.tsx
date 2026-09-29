@@ -1,4 +1,4 @@
-import { Mail, Clock, ArrowRight } from 'lucide-react';
+import { Mail, Clock, ArrowRight, CalendarCheck } from 'lucide-react';
 import { useState } from 'react';
 import { supabase } from './lib/supabase';
 
@@ -59,7 +59,7 @@ function App() {
           <div className="space-y-4">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-50 border border-red-100 rounded-full text-red-700 text-sm font-medium">
               <Clock className="w-4 h-4" />
-              <span>Coming Soon</span>
+              <span>iOS &amp; Android Apps Coming Soon</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 tracking-tight">
@@ -72,6 +72,18 @@ function App() {
               Book licensed massage therapists who come to you.
               Relax at home, work, or wherever you need relief.
             </p>
+
+            <div className="pt-4">
+              <a
+                href="https://book.lmtassistant.com/therapy-on-demand"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-red-700 hover:bg-red-800 text-white text-lg px-10 py-4 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-red-200 hover:-translate-y-0.5 active:translate-y-0"
+              >
+                <CalendarCheck className="w-5 h-5" />
+                Book Now
+              </a>
+            </div>
           </div>
 
           {/* Email Signup Form */}
@@ -101,7 +113,7 @@ function App() {
 
               {isSubmitted && (
                 <div className="text-green-700 bg-green-50 border border-green-200 rounded-lg px-4 py-3 text-sm font-medium animate-fade-in">
-                  Thanks! We'll notify you when we launch.
+                  Thanks! We'll let you know when our iOS and Android apps launch.
                 </div>
               )}
 
@@ -113,7 +125,7 @@ function App() {
             </form>
 
             <p className="text-sm text-slate-500 mt-4">
-              Be the first to know when we launch. No spam, ever.
+              Be the first to know when our iOS and Android apps launch. No spam, ever.
             </p>
           </div>
 
